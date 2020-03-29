@@ -42,7 +42,7 @@ Put this content inside the *launch.json*:
             "log" : true,
             "stopOnEntry": false,
             "pathMappings": {
-                "/var/www/html": "/Users/brunobarros/Development/get_started/php"
+                "/var/www/html": "ABSOLUTE_PATH_FOR_YOU_PROJECT"
             }
         },
         {
