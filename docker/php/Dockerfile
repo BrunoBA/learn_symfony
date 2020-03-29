@@ -1,7 +1,9 @@
 FROM php:7.4
-LABEL maintainer="dev@chialab.io"
+LABEL maintainer="brunobarros2014@gmail.com"
 
 WORKDIR /var/www/html/
+
+RUN apt-get update && apt-get install -y iputils-ping
 
 # Download script to install PHP extensions and dependencies
 ADD https://raw.githubusercontent.com/mlocati/docker-php-extension-installer/master/install-php-extensions /usr/local/bin/
@@ -35,6 +37,11 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update -q \
 # already installed:
 #      iconv \
 #      mbstring \
+
+RUN pecl install xdebug
+
+# Copy xdebug configuration for remote debugging
+COPY ./xdebug.ini /usr/local/etc/php/conf.d/xdebug.ini
 
 # Install Composer.
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
