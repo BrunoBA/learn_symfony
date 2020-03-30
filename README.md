@@ -21,7 +21,7 @@ symfony serve --port=8080
 
 ## Xdebug enabled
 
-To run without problems open the port 9000
+To run without problems open the port 9000 _(On the host machine)_
 ```
  nc -l 9000
 ```
