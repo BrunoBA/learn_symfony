@@ -4,7 +4,7 @@
 Change the _APP_NAME_ to the __name for your project__.
 
 ```
-composer create-project symfony/skeleton _APP_NAME_ "^4.2"
+composer create-project symfony/skeleton APP_NAME "^4.2"
 ```
 ## Enter on Container
 ```
@@ -32,6 +32,7 @@ mkdir .vscode && touch launch.json
 ```
 
 Put this content inside the *launch.json*:
+Change the _ABSOLUTE_PATH_FOR_YOU_PROJECT_ for the __Absolute path for your project__
 ```
 {
     "version": "0.2.0",
