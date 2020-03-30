@@ -1,35 +1,55 @@
+1.  [Commands](#commands)
+2.  [Symfony](#symfony)
+3.  [Extra](#extra)
+
 # COMMANDS
 
-## Init the project
+## Create the project
+
 Change the _APP_NAME_ to the __name for your project__.
 
 ```
 composer create-project symfony/skeleton APP_NAME "^4.2"
-composer create-project symfony/skeleton consultorio "^4.2"
 ```
+
 ## Enter on Container
+
 ```
 docker exec -it php_web /bin/sh
+
 ```
+
 ## Initialize the server
+
 ```
 php -S 0.0.0.0:8080 -t public
 ```
 or
+
 ```
 symfony serve --port=8080
 ```
 
-## Xdebug enabled
+# Symfony
+
+The most of commands are running for ```orm-pack```
+
+# Extra
+
+The [Composer](https://getcomposer.org/download) and [Symfony](https://symfony.com/download) was installed globally
+## Xdebug
 
 To run without problems open the port 9000
+
 ```
- nc -l 9000
+nc -l 9000
 ```
+
 If you don´t have create one folder on the root
 
 ```
 mkdir .vscode && touch launch.json
+
 ```
 
 Put this content inside the *launch.json*:
@@ -60,3 +80,6 @@ Put this content inside the *launch.json*:
 }
 ```
 
+# Symfony
+
+The most of commands are running for ```orm-pack```
