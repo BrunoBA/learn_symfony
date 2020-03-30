@@ -18,9 +18,6 @@ class DoctorController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/doctor", method={"POST"})
-     */
     public function store() {
         
     }

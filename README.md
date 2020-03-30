@@ -15,6 +15,10 @@ docker exec -it php_web /bin/sh
 ```
 php -S 0.0.0.0:8080 -t public
 ```
+or
+```
+symfony serve --port=8080
+```
 
 ## Xdebug enabled
 
@@ -26,7 +30,6 @@ If you don´t have create one folder on the root
 
 ```
 mkdir .vscode && touch launch.json
-
 ```
 
 Put this content inside the *launch.json*:
