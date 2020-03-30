@@ -39,8 +39,7 @@ The most of commands are running for ```orm-pack```
 The [Composer](https://getcomposer.org/download) and [Symfony](https://symfony.com/download) was installed globally
 ## Xdebug
 
-To run without problems open the port 9000
-
+To run without problems open the port 9000 _(On the host machine)_
 ```
 nc -l 9000
 ```
@@ -53,6 +52,7 @@ mkdir .vscode && touch launch.json
 ```
 
 Put this content inside the *launch.json*:
+Change the _ABSOLUTE_PATH_FOR_YOU_PROJECT_ for the __Absolute path for your project__
 ```
 {
     "version": "0.2.0",
